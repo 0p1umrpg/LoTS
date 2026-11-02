@@ -135,7 +135,35 @@
     flex-basis: 82px;
     font-size: 8px;
   }
+body .cronojade .cronojade-lista > div.cronojade-fila {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  min-height: 66px !important;
+}
 
+body .cronojade .cronojade-lista > div.cronojade-fila > div.cronojade-dia {
+  flex: 0 0 70px !important;
+  width: 70px !important;
+  text-align: center !important;
+}
+
+body .cronojade .cronojade-lista > div.cronojade-fila > div.cronojade-tema {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  text-align: left !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+body .cronojade .cronojade-lista > div.cronojade-fila > div.cronojade-estado {
+  flex: 0 0 100px !important;
+  width: 100px !important;
+}
   .cronojade .cronojade-tema {
     padding: 8px 10px;
   }
