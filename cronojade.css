@@ -1,0 +1,111 @@
+.cronojade {
+  width: 500px;
+  max-width: 100%;
+  margin: 15px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #222522;
+  border: 1px solid #494b40;
+  color: #d1cec3;
+  font-family: Arial, sans-serif;
+}
+
+.cronojade .cronojade-titulo {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 0 5px 14px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #777D6F;
+}
+
+.cronojade .cronojade-mes {
+  color: #a7aa9b;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cronojade .cronojade-anio {
+  color: #777D6F;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.cronojade .cronojade-fila {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) 100px;
+  align-items: center;
+  min-height: 62px;
+  border-bottom: 1px solid #3b3e38;
+}
+
+.cronojade .cronojade-fila:last-child {
+  border-bottom: 0;
+}
+
+.cronojade .cronojade-dia {
+  color: #a7aa9b;
+  font-family: Georgia, serif;
+  font-size: 27px;
+  text-align: center;
+}
+
+.cronojade .cronojade-tema {
+  padding: 8px 12px;
+  border-left: 1px solid #494b40;
+}
+
+.cronojade .cronojade-tema a {
+  display: block;
+  color: #d1cec3;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cronojade .cronojade-tema a:hover {
+  color: #a7aa9b;
+}
+
+.cronojade .cronojade-tema span {
+  display: block;
+  margin-top: 5px;
+  color: #96988e;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cronojade .cronojade-estado {
+  justify-self: center;
+  min-width: 76px;
+  padding: 6px 8px;
+  border: 1px solid #777D6F;
+  color: #c5c7bb;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cronojade .cronojade-estado.cerrado {
+  border-color: #55594f;
+  color: #999c91;
+}
+
+.cronojade .cronojade-estado.abandonado {
+  border-color: #725b57;
+  color: #c09b91;
+}
+
+@media (max-width: 540px) {
+  .cronojade .cronojade-fila {
+    grid-template-columns: 48px minmax(0, 1fr) 88px;
+  }
+}
