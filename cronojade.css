@@ -169,7 +169,7 @@ body .cronojade .cronojade-lista > div.cronojade-fila > div.cronojade-estado {
     flex-basis: 72px !important;
     width: 72px !important;
   }
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   body .cronojade .cronojade-lista > div.cronojade-fila > div.cronojade-tema {
     padding: 4px 8px !important;
   }
