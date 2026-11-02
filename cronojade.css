@@ -37,11 +37,12 @@
 }
 
 .cronojade .cronojade-fila {
-  display: grid;
-  grid-template-columns: 58px minmax(0, 1fr) 100px;
+  display: flex !important;
   align-items: center;
-  min-height: 62px;
+  width: 100%;
+  min-height: 66px;
   border-bottom: 1px solid #3b3e38;
+  box-sizing: border-box;
 }
 
 .cronojade .cronojade-fila:last-child {
@@ -49,15 +50,25 @@
 }
 
 .cronojade .cronojade-dia {
+  flex: 0 0 70px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border-right: 1px solid #494b40;
   color: #a7aa9b;
   font-family: Georgia, serif;
-  font-size: 27px;
+  font-size: 30px;
+  line-height: 1;
   text-align: center;
 }
 
 .cronojade .cronojade-tema {
-  padding: 8px 12px;
-  border-left: 1px solid #494b40;
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto !important;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
 }
 
 .cronojade .cronojade-tema a {
@@ -65,8 +76,11 @@
   color: #d1cec3;
   font-family: Georgia, serif;
   font-size: 13px;
+  line-height: 1.4;
   text-decoration: none;
   text-transform: uppercase;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
 }
 
 .cronojade .cronojade-tema a:hover {
@@ -75,17 +89,21 @@
 
 .cronojade .cronojade-tema span {
   display: block;
-  margin-top: 5px;
+  margin-top: 3px;
   color: #96988e;
   font-size: 10px;
+  line-height: 1.4;
   letter-spacing: 1px;
   text-transform: uppercase;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
 }
 
 .cronojade .cronojade-estado {
-  justify-self: center;
-  min-width: 76px;
-  padding: 6px 8px;
+  flex: 0 0 100px;
+  box-sizing: border-box;
+  margin: 0 4px;
+  padding: 7px 5px;
   border: 1px solid #777D6F;
   color: #c5c7bb;
   font-size: 9px;
@@ -105,7 +123,20 @@
 }
 
 @media (max-width: 540px) {
-  .cronojade .cronojade-fila {
-    grid-template-columns: 48px minmax(0, 1fr) 88px;
+  .cronojade {
+    padding: 14px;
+  }
+
+  .cronojade .cronojade-dia {
+    flex-basis: 55px;
+  }
+
+  .cronojade .cronojade-estado {
+    flex-basis: 82px;
+    font-size: 8px;
+  }
+
+  .cronojade .cronojade-tema {
+    padding: 8px 10px;
   }
 }
