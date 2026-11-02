@@ -47,14 +47,18 @@ body .cronojade .cronojade-lista > div.cronojade-fila {
   flex-direction: row !important;
   flex-wrap: nowrap !important;
   align-items: center !important;
-  justify-content: space-between !important;
   box-sizing: border-box !important;
   width: 100% !important;
   height: 64px !important;
   min-height: 64px !important;
-  margin: 0 0 2px !important;
+  margin: 0 !important;
   padding: 0 !important;
-  border: 1px solid #3b3e38 !important;
+  border: 0 !important;
+  border-bottom: 1px solid #3b3e38 !important;
+}
+
+body .cronojade .cronojade-lista > div.cronojade-fila:last-child {
+  border-bottom: 0 !important;
 }
 
 body .cronojade .cronojade-lista > div.cronojade-fila > div {
